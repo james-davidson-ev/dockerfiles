@@ -7,7 +7,7 @@ ENV PATH="$PATH:/root/.dotnet/tools"
 WORKDIR /opt/asdf
 COPY asdf.csproj deps-clr.edn ./
 RUN mkdir -p src/cljr
-COPY user.cljr src/cljr
+COPY asdf.cljr src/cljr
 RUN dotnet restore
 RUN cljr -P
 COPY entrypoint.sh /entrypoint.sh

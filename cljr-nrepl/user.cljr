@@ -1,7 +1,0 @@
-(ns user
-  (:require [clojure.tools.nrepl :as nrepl]))
-
-(defonce nrepl-session (nrepl/start-server!))
-
-; TODO find a better way to wait for ctrl-c
-(read)
