@@ -3,12 +3,13 @@ RUN apt update -y
 RUN apt install -y vim screen ca-certificates procps net-tools
 RUN dotnet tool install --global Clojure.Main --version 1.12.0-alpha9
 RUN dotnet tool install --global Clojure.Cljr --version 0.1.0-alpha5
+ENV PATH="$PATH:/root/.dotnet/tools"
 WORKDIR /opt/asdf
-COPY asdf.csproj deps-clr.edn .
+COPY asdf.csproj deps-clr.edn ./
 RUN mkdir -p src/cljr
 COPY user.cljr src/cljr
 RUN dotnet restore
-RUN /root/.dotnet/tools/cljr -P
+RUN cljr -P
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT /entrypoint.sh
