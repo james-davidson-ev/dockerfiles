@@ -1,0 +1,5 @@
+{:paths ["src/cljr"]
+ :deps {io.github.clojure/clr.data.json {:git/tag "v2.5.0" :git/sha "1c738a1"}
+        io.github/anderseknert/ring-clr {:git/sha "656d74a4d7db6ebb531e7c81e4a2a988469e9dd4"}
+        io.github.clojure/clr.tools.nrepl {:git/tag "v0.1.2-alpha2" :git/sha "a58009f"}}}
+

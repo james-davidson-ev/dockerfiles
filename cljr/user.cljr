@@ -1,0 +1,4 @@
+(ns user
+  (:require [clojure.tools.nrepl :as nrepl]))
+
+(defonce nrepl-session (nrepl/start-server!))
