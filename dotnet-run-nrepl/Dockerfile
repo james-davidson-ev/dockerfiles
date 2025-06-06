@@ -6,4 +6,5 @@ COPY asdf.csproj .
 RUN dotnet restore
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+COPY Program.cs .
 ENTRYPOINT /entrypoint.sh

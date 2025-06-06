@@ -1,7 +1,12 @@
+using System.Reflection;
 using clojure.lang;
 
 // start up Clojure runtime including compiler
 RT.Init();
+
+// make .cljr file resources available from DLL
+Assembly.Load("clojure.tools.nrepl");
+Assembly.Load("clojure.tools.reader");
 
 // compile nREPL lib
 var ns = "clojure.tools.nrepl";
