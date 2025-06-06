@@ -8,6 +8,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AWSSDK.S3" Version="3.7.300" />
+    <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.300" />
     <!-- <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="8.0.1" /> -->
     <!-- <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" /> -->
     <!-- <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.1" /> -->
