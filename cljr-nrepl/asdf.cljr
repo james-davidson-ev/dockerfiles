@@ -1,9 +1,7 @@
 (ns asdf
-  (:import [System.Threading Thread Timeout])
   (:require [clojure.tools.nrepl :as nrepl]))
 
 (declare nrepl-server)
 
 (defn -main [& args]
- (def nrepl-server (nrepl/start-server!))
- (Thread/Sleep Timeout/Infinite))
+ (def nrepl-server (nrepl/start-server!)))
