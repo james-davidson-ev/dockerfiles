@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0
+USER root
 RUN apt update -y
 RUN apt install -y vim screen ca-certificates procps net-tools
 RUN dotnet tool install --global Clojure.Main --version 1.12.0-alpha10
