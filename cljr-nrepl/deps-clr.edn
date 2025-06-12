@@ -3,5 +3,6 @@
         io.github.clojure/clr.data.priority-map {:git/tag "v1.2.0" :git/sha "1c22751"}
         io.github.clojure/clr.core.cache {:git/tag "v1.1.234" :git/sha "56e4406"}
         io.github/anderseknert/ring-clr {:git/sha "656d74a4d7db6ebb531e7c81e4a2a988469e9dd4"}
+        io.github.structmap/cljr-nuget {:git/tag "v0.0.1" :git/sha "d00c5a7"}
         io.github.clojure/clr.tools.nrepl {:git/tag "v0.1.2-alpha2" :git/sha "a58009f"}}}
 
